@@ -1,4 +1,5 @@
 # capstone1
+
 document.getElementById('tracking-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
