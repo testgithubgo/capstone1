@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.expenses-summary {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.summary-item {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.expenses-filter {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.expenses-filter button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.expenses-filter button:hover {
+    background-color: #0056b3;
+}
+
+.expenses-list {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.expense-item div {
+    flex: 1;
+    text-align: center;
+}
+
+.expense-item .edit-btn {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.expense-item .edit-btn:hover {
+    background-color: #218838;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Category-specific styles */
+.category-Grocery
+{
+    background-color: #ffe4b5;
+}
+
+.category-Bills {
+    background-color: #add8e6;
+}
+
+.category-Entertainment {
+    background-color: #90ee90;
+}
+
+.category-Entertainment {
+    background-color: #90ee90;
+}
+
+.category-other {
+    background-color: #d3d3d3; /* Light gray for 'Other' category */
+}
+.category- {
+    background-color: #d3d3d3; /* Light gray for 'Other' category */
+}
+[class^="category-"] {
+    background-color: #d3d3d3; /* Light gray for all categories */
+}
+/* Add more categories as needed */
+
+
+
+
+/* Existing styles... */
+/* Existing styles... */
+
+#spent.over-budget {
+    background-color: #ffcccc;
+}
+
+#new-category, #edit-new-category {
+    margin-top: 10px;
+    padding: 8px;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+}
